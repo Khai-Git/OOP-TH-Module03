@@ -1,0 +1,12 @@
+package Bai03;
+
+import java.util.List;
+
+public class DanhSachSach {
+	private List<Sach> list;
+	
+	public DanhSachSach() {}
+	public boolean them(Sach s) {
+		return true;
+	}
+}

@@ -1,0 +1,31 @@
+package Bai03;
+
+import java.time.LocalDate;
+
+public class SachThamKhao extends Sach{
+	private double thue;
+	
+	public SachThamKhao() {}
+
+	public SachThamKhao(String maSach, LocalDate ngayNhap, double donGia, int soLuong, String nhaXuatBan, double thue) {
+		super(maSach, ngayNhap, donGia, soLuong, nhaXuatBan);
+		setThue(thue);
+	}
+
+	public double getThue() {
+		return thue;
+	}
+
+	public void setThue(double thue) {
+		if (thue >= 0) {
+			this.thue = thue;
+		}
+	}
+	public double getThanhTien() {
+		return getSoLuong() * getDonGia() + thue;
+	}
+	@Override
+	public String toString() {
+		return String.format(" %s | " + getNgayNhap() +" | %.0f | %d | %s | " + thue, getMaSach(), getDonGia(), getSoLuong(), getNhaXuatBan());
+	}
+}

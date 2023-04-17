@@ -1,0 +1,24 @@
+package Bai03;
+
+import java.time.LocalDate;
+
+public class SachGiaoKhoa extends Sach{
+	private boolean tinhTrang;
+	
+	public SachGiaoKhoa() {}
+
+	public SachGiaoKhoa(String maSach, LocalDate ngayNhap, double donGia, int soLuong, String nhaXuatBan,
+			boolean tinhTrang) {
+		super(maSach, ngayNhap, donGia, soLuong, nhaXuatBan);
+		this.tinhTrang = tinhTrang;
+	}
+	public double getThanhTien() {
+		return 0;
+	}
+
+	@Override
+	public String toString() {
+		return "SachGiaoKhoa [tinhTrang=" + tinhTrang + "]";
+	}
+	
+}

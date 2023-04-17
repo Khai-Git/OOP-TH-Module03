@@ -1,0 +1,6 @@
+package Bai03;
+
+public class SachGiaoKhoa {
+	private boolean tinhTrang;
+	
+}

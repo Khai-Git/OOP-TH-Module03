@@ -1,0 +1,14 @@
+package Bai03;
+
+import java.time.LocalDate;
+
+public class Sach {
+	private String maSach;
+	private LocalDate ngayNhap;
+	private double donGia;
+	private int soLuong;
+	private String nhaXuatBan;
+	
+	public Sach() {}
+	
+}
